@@ -5,6 +5,7 @@ const userRoutes = require("./user.routes");
 const productRoutes = require("./product.routes");
 const orderRoutes = require("./order.routes");
 const paymentRoutes = require("./payment.routes");
+const settingsRoutes = require("./settings.routes");
 
 const router = express.Router();
 
@@ -13,4 +14,5 @@ router.use("/users", userRoutes);
 router.use("/products", productRoutes);
 router.use("/orders", orderRoutes);
 router.use("/payments", paymentRoutes);
+router.use("/settings", settingsRoutes);
 module.exports = router;

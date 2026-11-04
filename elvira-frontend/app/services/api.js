@@ -1,8 +1,6 @@
 // هر دو اسم env پشتیبانی می‌شود تا اگر یکی از آن‌ها تنظیم نشده بود، آدرس اشتباه نرود
 export const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_BASE_URL ||
-  process.env.NEXT_PUBLIC_API_URL ||
-  "https://elvira-backend.vercel.app";
+  process.env.NEXT_PUBLIC_API_BASE_URL ||  "https://elvira-backend.vercel.app";
 
 export class ApiError extends Error {
   constructor(message, status = 0) {
